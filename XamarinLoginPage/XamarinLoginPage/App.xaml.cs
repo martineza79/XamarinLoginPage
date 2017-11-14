@@ -9,11 +9,17 @@ namespace XamarinLoginPage
 {
     public partial class App : Application
     {
+        public static bool IsUserLoggedIn { get; set;
+        }
         public App()
         {
             InitializeComponent();
 
-            MainPage = new XamarinLoginPage.MainPage();
+            if (IsUserLoggedIn)
+                MainPage = new XamarinLoginPage.MainPage();
+
+            else
+                MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()

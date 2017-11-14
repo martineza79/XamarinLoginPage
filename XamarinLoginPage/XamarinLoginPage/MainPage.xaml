@@ -3,13 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:XamarinLoginPage"
              x:Class="XamarinLoginPage.MainPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Logout" Clicked="OnLogout_Clicked" />
+    </ContentPage.ToolbarItems>
+
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Email"></Label>
-            <Entry Placeholder="Enter Your Email"></Entry>
-            <Label Text="Password"></Label>
-            <Entry Placeholder="Enter Your Password"></Entry>
-            <Button Text="Login"></Button>
+            <Label Text="Main app content goes here"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
