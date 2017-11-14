@@ -9,8 +9,8 @@ namespace XamarinLoginPage
 {
     public partial class App : Application
     {
-        public static bool IsUserLoggedIn { get; set;
-        }
+        public static bool IsUserLoggedIn { get; set; }
+
         public App()
         {
             InitializeComponent();
